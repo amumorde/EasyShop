@@ -1,26 +1,25 @@
-NEXT_PUBLIC_APP_NAME = "Prostore"
-NEXT_PUBLIC_APP_DESCRIPTION = "A modern ecommerce store built with Next.js"
-NEXT_PUBLIC_SERVER_URL = "http://localhost:3000"
+NEXT_PUBLIC_APP_NAME="EasyShop"
+NEXT_PUBLIC_APP_DESCRIPTION="A modern ecommerce store built with Next.js"
+NEXT_PUBLIC_SERVER_URL="http://localhost:3000"
 
-DATABASE_URL="postgresql://neondb_owner:npg_GqSx4YQF7jyt@ep-gentle-haze-b3uipl27-pooler.c-4.ap-southeast-1.aws.neon.tech/neondb?channel_binding=require&sslmode=require"
-
-NEXTAUTH_SECRET="amol123"
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_URL_INTERNAL=http://localhost:3000
+DATABASE_URL="your_database_url_here"
+NEXTAUTH_SECRET="replace_with_a_random_secret"
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_URL_INTERNAL="http://localhost:3000"
 
 PAYMENT_METHODS="PayPal, Stripe, CashOnDelivery"
 DEFAULT_PAYMENT_METHOD="PayPal"
 
 PAYPAL_API_URL="https://api-m.sandbox.paypal.com"
-PAYPAL_CLIENT_ID=""
-PAYPAL_APP_SECRET=""
+PAYPAL_CLIENT_ID="your_paypal_client_id"
+PAYPAL_APP_SECRET="your_paypal_app_secret"
 
-UPLOADTHING_TOKEN=''
-UPLOADTHING_SECRET=""
-UPLOADTHING_APPID=""
+UPLOADTHING_TOKEN="your_uploadthing_token"
+UPLOADTHING_SECRET="your_uploadthing_secret"
+UPLOADTHING_APPID="your_uploadthing_app_id"
 
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=""
-STRIPE_SECRET_KEY=""
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY="your_stripe_publishable_key"
+STRIPE_SECRET_KEY="your_stripe_secret_key"
 
-RESEND_API_KEY=""
+RESEND_API_KEY="your_resend_api_key"
 SENDER_EMAIL="onboarding@resend.dev"
