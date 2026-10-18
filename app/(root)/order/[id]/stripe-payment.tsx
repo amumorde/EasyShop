@@ -22,7 +22,7 @@ const StripePayment = ({
   clientSecret: string;
 }) => {
   const stripePromise = loadStripe(
-    process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string
+    process.env.STRIPE_PUBLISHABLE_KEY as string
   );
 
   const { theme, systemTheme } = useTheme();
@@ -95,10 +95,10 @@ const StripePayment = ({
             theme === 'dark'
               ? 'night'
               : theme === 'light'
-              ? 'stripe'
-              : systemTheme === 'light'
-              ? 'stripe'
-              : 'night',
+                ? 'stripe'
+                : systemTheme === 'light'
+                  ? 'stripe'
+                  : 'night',
         },
       }}
       stripe={stripePromise}
