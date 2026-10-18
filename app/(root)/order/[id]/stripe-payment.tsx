@@ -10,7 +10,7 @@ import {
 import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
 import { formatCurrency } from '@/lib/utils';
-import { SERVER_URL } from '@/lib/constants';
+// import { SERVER_URL } from '@/lib/constants';
 
 const StripePayment = ({
   priceInCents,
@@ -47,7 +47,7 @@ const StripePayment = ({
         .confirmPayment({
           elements,
           confirmParams: {
-            return_url: `${SERVER_URL}/order/${orderId}/stripe-payment-success`,
+            return_url: `${window.location.origin}/order/${orderId}/stripe-payment-success`,
           },
         })
         .then(({ error }) => {
